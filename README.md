@@ -1,2 +1,3 @@
 # Rock-Paper-Scissor
-This is simple Rock Paper Scissor game created during JAVASCRIPT project. I
+This is simple Rock Paper Scissor game created during JAVASCRIPT project. You can play this game only on console for now.
+

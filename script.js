@@ -1,21 +1,18 @@
-// Create a rock paper scissor Game. player VS computer
-// make a  fucntion which let user play for 5 rounds
-// Display wining messsage with Score and rounds after  finishing.
+// ****************Create a rock paper scissor Game. player VS computer********************
 
 
-
-
-
-
-
-
-
-//make a function which takes both input and compete them.
+//Function which takes  runs the game and takes input from player and computer.
 const playGround = () => {
+
+    //variables to show score.
+    let userScore = 0;
+    let computerScore = 0;
+
+    //Loop to run game for 5 rounds.
     for (i = 0; i < 5; i++) {
 
 
-        // create a function which let computer choose random (ROCK, PAPER OR SCISSOR).
+        // create a function which let computer choose random option. (ROCK, PAPER OR SCISSOR).
         const opt = ["ROCK", "PAPER", "SCISSOR"]
         const computerInput = () => {
             const randomIndex = Math.floor(Math.random() * opt.length)
@@ -29,42 +26,40 @@ const playGround = () => {
 
         const playerSelection = prompt("Enter Rock, Paper Or scissor? : ");
         const userChoice = playerSelection.toUpperCase();
-        let user = 1;
-        let ai = 0;
-        let win;
-
-        if (userChoice === "ROCK" && computerChoice === "SCISSOR") {
+       
+        // Condition that decides the winner
+        if (userChoice === "ROCK" && computerChoice === "SCISSOR") { userScore++;
             console.log(`USER : ${userChoice}  AI: ${computerChoice}, USER wins this round.`);
-            win = user+1
-            console.log(win)
+            
+           
 
-        } else if (userChoice === "ROCK" && computerChoice === "PAPER") {
+        } else if (userChoice === "ROCK" && computerChoice === "PAPER") { computerScore++;
             console.log(`User : ${userChoice}  AI: ${computerChoice}, AI wins this round.`);
-            win = ai+1
-            console.log(win)
+           
+            
 
 
-        } else if (userChoice === "SCISSOR" && computerChoice === "PAPER") {
+        } else if (userChoice === "SCISSOR" && computerChoice === "PAPER") { userScore++
             console.log(`User : ${userChoice}  AI: ${computerChoice}, USER wins this round.`);
-            win = user+1
-            console.log(win)
+            let result = userScore;
+           
 
-        } else if (userChoice === "SCISSOR" && computerChoice === "ROCK") {
+        } else if (userChoice === "SCISSOR" && computerChoice === "ROCK") { computerScore++
             console.log(`User : ${userChoice}  AI: ${computerChoice}, AI wins this round.`);
-            win = ai+1
-            console.log(win)
+           
+           
 
 
-        } else if (userChoice === "PAPER" && computerChoice === "ROCK") {
+        } else if (userChoice === "PAPER" && computerChoice === "ROCK") { userScore++;
             console.log(`User : ${userChoice}  AI: ${computerChoice}, USER wins this round.`);
-            win = user+1
-            console.log(win)
+            let result = userScore;
+           
 
 
-        } else if (userChoice === "PAPER" && computerChoice === "SCISSOR") {
+        } else if (userChoice === "PAPER" && computerChoice === "SCISSOR") { computerScore++;
             console.log(`User : ${userChoice}  AI: ${computerChoice}, AI wins this round.`);
-            win = ai+1
-            console.log(win)
+            let result = userScore;
+            
         }
         else if (userChoice === computerChoice) {
             console.log(`User : ${userChoice}  AI: ${computerChoice}, DRAW`);
@@ -72,6 +67,17 @@ const playGround = () => {
             console.log('PLEASE CHOOSE ROCK, PAPER OR SCISSOR ONLY.');
         }
 
+      
+    }
+
+    // condition that shows overall Score.
+    if(userScore == computerScore){
+        console.log(`You lose! AI:${computerScore}  USER: ${userScore}`)
+    } else if(userScore < computerScore){
+        console.log(`You lose! AI:${computerScore}  USER: ${userScore}`)
+    } else{
+        console.log(`You win! AI:${computerScore}  USER: ${userScore}`)
+      
     }
 }
 playGround()

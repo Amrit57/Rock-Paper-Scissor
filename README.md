@@ -3,3 +3,6 @@ This is simple Rock Paper Scissor game created during JAVASCRIPT project. You ca
 
 This is currently playable in Console.
 This is a foundation project during javascript, Final product coming soon.
+
+
+created a branch for UI.

@@ -1,4 +1,4 @@
-// ****************Create a rock paper scissor Game. player VS computer********************
+    // ****************Create a rock paper scissor Game. player VS computer********************
 
 
 //Function which takes  runs the game and takes input from player and computer.

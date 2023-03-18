@@ -1,8 +1,7 @@
 # Rock-Paper-Scissor
-This is simple Rock Paper Scissor game created during JAVASCRIPT project. You can play this game only on console for now.
+This is simple Rock Paper Scissor game created during JAVASCRIPT project. In TheOdinProject.
+Project Completed!
 
-This is currently playable in Console.
-This is a foundation project during javascript, Final product coming soon.
+USED #HTML #CSS #JAVASRIPT
 
-
-created a branch for UI.
+Might add some more feature or UI later. [2023, March 18]

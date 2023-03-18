@@ -12,28 +12,34 @@ body{
     background:linear-gradient( to left , grey, rgba(233, 221, 221, 0.96));
 }
 .container{
-    margin: auto;
-    display: grid;
     justify-items: center;
     text-align: center;
+   
 }
 
 h1{
-    margin: 40px;
+    margin: 2rem;
     font-size: 3rem;
+   
 }
 .intro{
-    margin: 10px;
-    font-size: 1.8rem;
-}
-.option{
-    margin: 20px 0 10px 0;
+    margin: 2rem 4rem   ;
+    font-size: 1.6rem;
+  
 }
 
 button{
-    padding: 20px 50px;
+    
+    box-sizing: border-box;
+    padding: 15px  40px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: 700;
+    margin: 1rem;
+    
+}
+.result-para{
     margin: 10px;
+    font-size: 1.3rem ;
+    font-weight: bold;
 }
